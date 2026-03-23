@@ -1,0 +1,9 @@
+{
+  "name": "github-actions-cicd-practice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node -e \"console.log('test ok')\"",
+    "build": "node -e \"require('fs').mkdirSync('dist', { recursive: true }); require('fs').copyFileSync('index.html', 'dist/index.html'); console.log('build ok')\""
+  }
+}
